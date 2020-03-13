@@ -1,0 +1,29 @@
+{
+   "name": "merge-options-default",
+   "version": "1.0.0",
+   "description": "Merged all the options with the for default !",
+   "main": "dist/index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/yoicalsin/merge-options-default.git"
+   },
+   "keywords": [
+      "merge-options",
+      "merge",
+      "default",
+      "options"
+   ],
+   "author": "Yoni Calsin <helloyonicb@gmail.com>",
+   "license": "MIT",
+   "bugs": {
+      "url": "https://github.com/yoicalsin/merge-options-default/issues"
+   },
+   "homepage": "https://github.com/yoicalsin/merge-options-default#readme",
+   "devDependencies": {
+      "prettier": "^1.19.1",
+      "typescript": "^3.8.3"
+   }
+}
