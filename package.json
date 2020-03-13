@@ -10,7 +10,8 @@
       "build": "yarn prebuild & tsc",
       "prebuild": "rimraf dist",
       "demo": "node demo.js",
-      "demo:start": "nodemon demo.js"
+      "demo:start": "nodemon demo.js",
+      "format": "prettier --write \"src/**/*.ts\" "
    },
    "repository": {
       "type": "git",
