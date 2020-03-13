@@ -1,8 +1,9 @@
 {
    "name": "merge-options-default",
    "version": "1.0.0",
-   "description": "Merged all the options with the for default !",
+   "description": "Merged all options (object) with the default!",
    "main": "dist/index.js",
+   "type": "dist/index.d.ts",
    "scripts": {
       "dev": "yarn prebuild & tsc -w",
       "dev:start": "nodemon dist/index.js",
@@ -21,7 +22,8 @@
       "merge-options",
       "merge",
       "default",
-      "options"
+      "options",
+      "function"
    ],
    "author": "Yoni Calsin <helloyonicb@gmail.com>",
    "license": "MIT",
