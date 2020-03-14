@@ -1,20 +1,7 @@
-interface More {
-   [key: string]: any;
-}
-
-interface MoreNumer {
-   [key: number]: any;
-}
-
-export const Merge = (
-   optionsDefault: More | MoreNumer,
-   ...moreOptions: any[]
-) => {
-   let payload = {
-      ...optionsDefault,
-   };
+export const Merge = (...moreOptions: any[]) => {
+   let payload = {};
    for (const v of moreOptions) {
-      if (v !== undefined && typeof v === 'object') {
+      if (typeof v === 'object') {
          payload = {
             ...payload,
             ...v,
