@@ -2,22 +2,6 @@
    "name": "merge-options-default",
    "version": "1.0.1",
    "description": "Merged all options (object) with the default!",
-   "main": "dist/index.js",
-   "type": "dist/index.d.ts",
-   "scripts": {
-      "dev": "yarn prebuild & tsc -w",
-      "dev:start": "nodemon dist/index.js",
-      "start": "node dist/index.js",
-      "build": "yarn prebuild & tsc",
-      "prebuild": "rimraf dist",
-      "demo": "node demo.js",
-      "demo:start": "nodemon demo.js",
-      "format": "prettier --write \"src/**/*.ts\" "
-   },
-   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/yoicalsin/merge-options-default.git"
-   },
    "keywords": [
       "merge-options",
       "merge",
@@ -25,15 +9,32 @@
       "options",
       "function"
    ],
-   "author": "Yoni Calsin <helloyonicb@gmail.com>",
-   "license": "MIT",
+   "homepage": "https://github.com/yoicalsin/merge-options-default#readme",
    "bugs": {
       "url": "https://github.com/yoicalsin/merge-options-default/issues"
    },
-   "homepage": "https://github.com/yoicalsin/merge-options-default#readme",
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/yoicalsin/merge-options-default.git"
+   },
+   "license": "MIT",
+   "author": "Yoni Calsin <helloyonicb@gmail.com>",
+   "type": "dist/index.d.ts",
+   "main": "dist/index.js",
+   "scripts": {
+      "prebuild": "rimraf dist",
+      "build": "yarn prebuild & tsc",
+      "demo": "node demo.js",
+      "demo:start": "nodemon demo.js",
+      "dev": "yarn prebuild & tsc -w",
+      "dev:start": "nodemon dist/index.js",
+      "format": "prettier --write \"src/**/*.ts\" ",
+      "start": "node dist/index.js"
+   },
    "devDependencies": {
       "nodemon": "^2.0.2",
       "prettier": "^1.19.1",
+      "prettier-plugin-packagejson": "^2.0.10",
       "rimraf": "^3.0.2",
       "typescript": "^3.8.3"
    }
