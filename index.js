@@ -7,6 +7,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * Licensed under MIT (https://github.com/yoicalsin/merge-options-default/blob/master/LICENSE)
  */
 const is_all_utils_1 = require("is-all-utils");
+/**
+ * @author Yoni Calsin <helloyonicb@gmail.com>
+ * @param objects More[]
+ */
 const MergeDefault = (...objects) => {
     let data = {};
     for (const object of objects) {
